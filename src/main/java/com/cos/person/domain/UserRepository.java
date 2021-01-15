@@ -29,6 +29,8 @@ public class UserRepository {
 	}
 	
 	public void update(int id, UpdateReqDto dto) {
-		System.out.println("DB에 수정하기");
+		// DAO 연결해서 실행하다가 익셉션 터짐
+		throw new IllegalArgumentException("argument를 잘못 넣음");
+		//	 System.out.println("DB에 수정하기");
 	}
 }
